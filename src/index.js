@@ -1,35 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CommentDetail from './comment';
-import Card from "./post";
-import "./index.css";
-// import logo from './logo.png ';
 
+import CardForm from"./card"
+import Btn from "./btn";
+import "./index.css";
 
 
 const App = () =>{
     return(
         <div className='ui container comments' style={{display:'flex'}}>
-            <Card
+            <CardForm 
             imgscr='https://www.whatsappimages.in/wp-content/uploads/2021/04/black-whatsapp-dp-images-Photo-Download.gif'
-            title='A Netfkix Orignal Series'
-            sname='DARK'
-            link='https://www.netflix.com/pk/'/>
-            <Card
-            imgscr='https://i.pinimg.com/originals/e3/91/b8/e391b81845081ae72f6c7d5d445cecba.jpg'
-            title='A Netfkix Orignal Series'
-            sname='Extra Curricular'
-            link='https://www.netflix.com/pk/'/>
-            <Card
+            content = 'Sam'
+            about = 'Web Devloper'/>
+            <CardForm
+            imgscr='https://w0.peakpx.com/wallpaper/122/734/HD-wallpaper-dark-sexy-dark-thumbnail.jpg'
+            content = 'Jak'
+            about = 'Graphic Design'/>
+            <CardForm
             imgscr='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1cY2xKKJogtPZS_-3qB2O3m3BxUMJq59Wnw&usqp=CAU'
-            title='A Netfkix Orignal Series'
-            sname='Stranger Things'
-            link='https://www.netflix.com/pk/'/>
-            {/* <CommentDetail/>
-            <CommentDetail/>
-            <CommentDetail/>
-            <CommentDetail/>
-            <CommentDetail/> */}
+            content = 'Jon'
+            about = 'Web Designer'/>
     </div>
     )
 }
